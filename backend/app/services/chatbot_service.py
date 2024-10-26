@@ -28,7 +28,7 @@ class RecommendationAgent:
         self.ready_for_recommendations = False
         self.recommended_books = set()  # Track previously recommended books
         self.question_count = 0
-        self.MIN_QUESTIONS = 3  # Minimum number of questions before recommendations
+        self.MIN_QUESTIONS = 3
 
         # Separate prompts for conversation and recommendations
         self.conversation_prompt = ChatPromptTemplate.from_messages([
@@ -41,9 +41,7 @@ class RecommendationAgent:
    - Previous books they enjoyed or disliked
 2. Only say 'READY_FOR_RECOMMENDATIONS' after asking AT LEAST 3 meaningful questions.
 3. If the user expresses dissatisfaction with recommendations:
-   - First acknowledge their feedback
-   - Then ask AT LEAST 2 specific questions about what they didn't like
-   - Focus on understanding their preferences more deeply
+   - Than recommend new set of books
 4. NEVER provide book recommendations in the conversation - wait for the explicit recommend_books call.
 5. Keep the conversation natural and avoid repetitive questions.
 6. If a user provides multiple pieces of information in one response, still ask follow-up questions about other aspects not covered."""),

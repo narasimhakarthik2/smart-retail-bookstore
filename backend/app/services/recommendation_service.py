@@ -81,13 +81,8 @@ def generate_llm_recommendations(preferences: dict) -> List[Dict]:
                     }
                     validated_recommendations.append(cleaned_rec)
 
-            # If we have exactly 8 valid recommendations, return them
-            if len(validated_recommendations) == 8:
-                return validated_recommendations
 
-            # If we don't have exactly 8, retry
-            print(f"Attempt {attempt + 1}: Got {len(validated_recommendations)} recommendations instead of 8. Retrying...")
-            continue
+            return validated_recommendations
 
         except json.JSONDecodeError as e:
             print(f"Attempt {attempt + 1}: JSON parsing error: {e}")

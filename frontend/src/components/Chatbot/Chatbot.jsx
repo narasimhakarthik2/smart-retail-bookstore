@@ -186,6 +186,7 @@ const Chatbot = () => {
     setMessages([]);
     setCart([]);
     setIsOrderProcessing(false);
+    setIsOrderComplete(false);
   };
 
   const sendMessage = async (message) => {

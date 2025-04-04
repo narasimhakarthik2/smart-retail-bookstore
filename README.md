@@ -1,3 +1,19 @@
+### Project Webpage Screenshots
+
+1. **Home Page**
+   ![Home Page](/assets/Picture1.jpg)
+
+2. **Recommendation Results**
+   ![Recommendation Results](/assets/Picture2.jpg)
+
+3. **User Preferences**
+   ![User Preferences](/assets/Picture3.jpg)
+
+4. **Chatbot Interaction**
+   ![Chatbot Interaction](/assets/Picture4.jpg)
+   
+   ![Additional Feature](/assets/Picture5.jpg)
+
 High level design (HLD)
 ---
 ```mermaid
